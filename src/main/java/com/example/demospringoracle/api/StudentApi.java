@@ -53,8 +53,8 @@ public class StudentApi {
         student.setName(studentDetails.getName());
         student.setAge(studentDetails.getAge());
         student.setAddress(studentDetails.getAddress());
-        final Student updatedStudent = studentService.updateStudent(studentDetails);
-        return ResponseEntity.ok(updatedStudent);
+        final Student student1 = studentService.updateStudent(student);
+        return ResponseEntity.ok(student1);
     }
 
     @DeleteMapping("/students/{id}")

@@ -29,16 +29,18 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student createStudent(Student student) {
-		return this.studentRepository.save(student);
+		return studentRepository.save(student);
 	}
 
 	@Override
-	public Student updateStudent(Student studentDetails) {
-		return this.studentRepository.save(studentDetails);
+	public Student updateStudent(Student student) {
+
+
+		return studentRepository.save(student);
 	}
 
 	@Override
 	public void deleteStudent(Student student) {
-		this.studentRepository.delete(student);
+		studentRepository.delete(student);
 	}
 }
