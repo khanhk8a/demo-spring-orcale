@@ -15,7 +15,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-public class LodaRestApi {
+public class LoginRestApi {
 
     @Autowired
     AuthenticationManager authenticationManager;
