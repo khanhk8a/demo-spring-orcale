@@ -11,3 +11,11 @@ bảng user_role
 package page search student
 
 ![image](https://user-images.githubusercontent.com/57353895/118398403-a5499a00-b682-11eb-8df3-a3e68fa53389.png)
+
+
+
+Chưa đăng nhập
+![image](https://user-images.githubusercontent.com/57353895/118398478-0cffe500-b683-11eb-8ba2-e297235870c9.png)
+Sau khi đăng nhập có token với quyền admin
+
+![image](https://user-images.githubusercontent.com/57353895/118398487-1ab56a80-b683-11eb-8562-c6dfa0fb2a94.png)
