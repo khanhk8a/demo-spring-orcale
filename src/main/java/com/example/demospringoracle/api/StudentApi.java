@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,8 +28,16 @@ public class StudentApi {
 
     @GetMapping("/students")
     public List<StudentDTO> getAllStudents() {
-        List<Student> Students = studentService.getAllStudent();
-        return Students.stream()
+        List<Student> students = studentService.getAllStudent();
+        return students.stream()
+            .map(this::convertToDto)
+            .collect(Collectors.toList());
+    }
+    /* se*/
+    @GetMapping("/students/search")
+    public List<StudentDTO> getNameStudents(@RequestParam String name,@RequestParam String pageIndex ,@RequestParam String perPage) {
+        List<Student> students = studentService.getNameStudent(name,pageIndex,perPage);
+        return students.stream()
             .map(this::convertToDto)
             .collect(Collectors.toList());
     }

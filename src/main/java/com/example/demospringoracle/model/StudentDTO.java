@@ -5,20 +5,17 @@ import java.io.Serializable;
 public class StudentDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
     private long id;
     private String name;
     private int age;
     private String address;
 
-    public StudentDTO(long id, String name, int age, String address) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
 
     public StudentDTO() {
     }
+
+
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
